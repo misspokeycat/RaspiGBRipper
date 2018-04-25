@@ -99,35 +99,39 @@ int main(void){
 	pinMode(D6, INPUT);
 	pinMode(D7, INPUT);
 
+	for (int i=0; i<27; i++){
+		pullUpDnControl(i, PUD_DOWN);
+	}
+
 	for(;;){
 	// Translate address to wires
-	if (digitalRead(WRITE)) cout << "WRITE" << endl;
-	if (digitalRead(READ)) cout << "READ" << endl;
-        if (digitalRead(SRAM)) cout << "SRAM" << endl;
-        if (digitalRead(A0)) cout << "A0" << endl;
-        if (digitalRead(A1)) cout << "A1" << endl;
-        if (digitalRead(A2)) cout << "A2" << endl;
-        if (digitalRead(A3)) cout << "A3" << endl;
-        if (digitalRead(A4)) cout << "A4" << endl;
-        if (digitalRead(A5)) cout << "A5" << endl;
-        if (digitalRead(A6)) cout << "A6" << endl;
-        if (digitalRead(A7)) cout << "A7" << endl;
-        if (digitalRead(A8)) cout << "A8" << endl;
-        if (digitalRead(A9)) cout << "A9" << endl;
-        if (digitalRead(A10)) cout << "A10" << endl;
-        if (digitalRead(A11)) cout << "A11" << endl;
-        if (digitalRead(A12)) cout << "A12" << endl;
-        if (digitalRead(A13)) cout << "A13" << endl;
-        if (digitalRead(A14)) cout << "A14" << endl;
-        if (digitalRead(A15)) cout << "A15" << endl;
-        if (digitalRead(D0)) cout << "D0" << endl;
-        if (digitalRead(D1)) cout << "D1" << endl;
-        if (digitalRead(D2)) cout << "D2" << endl;
-        if (digitalRead(D3)) cout << "D3" << endl;
-        if (digitalRead(D4)) cout << "D4" << endl;
-        if (digitalRead(D5)) cout << "D5" << endl;
-        if (digitalRead(D6)) cout << "D6" << endl;
-        if (digitalRead(D7)) cout << "D7" << endl;
+	if (digitalRead(WRITE)) cout << "0 WRITE" << endl;
+	if (digitalRead(READ)) cout << "1 READ" << endl;
+        if (digitalRead(SRAM)) cout << "2 SRAM" << endl;
+        if (digitalRead(A0)) cout << "3 A0" << endl;
+        if (digitalRead(A1)) cout << "4 A1" << endl;
+        if (digitalRead(A2)) cout << "5 A2" << endl;
+        if (digitalRead(A3)) cout << "6 A3" << endl;
+        if (digitalRead(A4)) cout << "7 A4" << endl;
+        if (digitalRead(A5)) cout << "8 A5" << endl;
+        if (digitalRead(A6)) cout << "9 A6" << endl;
+        if (digitalRead(A7)) cout << "10 A7" << endl;
+        if (digitalRead(A8)) cout << "11 A8" << endl;
+        if (digitalRead(A9)) cout << "12 A9" << endl;
+        if (digitalRead(A10)) cout << "13 A10" << endl;
+        if (digitalRead(A11)) cout << "14 A11" << endl;
+        if (digitalRead(A12)) cout << "15 A12" << endl;
+        if (digitalRead(A13)) cout << "16 A13" << endl;
+        if (digitalRead(A14)) cout << "17 A14" << endl;
+        if (digitalRead(A15)) cout << "18 A15" << endl;
+        if (digitalRead(D0)) cout << "19 D0" << endl;
+        if (digitalRead(D1)) cout << "20 D1" << endl;
+        if (digitalRead(D2)) cout << "21 D2" << endl;
+        if (digitalRead(D3)) cout << "22 D3" << endl;
+        if (digitalRead(D4)) cout << "23 D4" << endl;
+        if (digitalRead(D5)) cout << "24 D5" << endl;
+        if (digitalRead(D6)) cout << "25 D6" << endl;
+        if (digitalRead(D7)) cout << "26 D7" << endl;
 	cout << "##################" << endl;
 	delay(500);
 	}

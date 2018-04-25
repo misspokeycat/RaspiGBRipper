@@ -1,0 +1,3 @@
+#!/bin/bash
+./ripper > game.gb
+vba game.gb
